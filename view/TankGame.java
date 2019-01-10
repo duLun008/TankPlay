@@ -34,18 +34,18 @@ public class TankGame {
 	}
 	
 	private void initialize() {
-		frame=new JFrame("Ì¹¿Ë´óÕ½");
+		frame=new JFrame("å¦å…‹å¤§æˆ˜");
 		frame.setBounds(450, 70, 600, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JMenuBar menubar=new JMenuBar();
 		frame.setJMenuBar(menubar);
 		
-		JMenu mnNewMenu = new JMenu("Ñ¡Ïî");
-		mnNewMenu.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 13));
+		JMenu mnNewMenu = new JMenu("é€‰é¡¹");
+		mnNewMenu.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 13));
 		menubar.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem= new JMenuItem("¿ªÊ¼ÓÎÏ·");
+		JMenuItem mntmNewMenuItem= new JMenuItem("å¼€å§‹æ¸¸æˆ");
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			
 			@Override
@@ -60,23 +60,23 @@ public class TankGame {
 			}
 		});
 		
-		mntmNewMenuItem.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 13));
+		mntmNewMenuItem.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 13));
 		mnNewMenu.add(mntmNewMenuItem);
 		
-		JMenu mnNewMenu_1 = new JMenu("ÓÎÏ·ËµÃ÷");
-		mnNewMenu.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 13));
+		JMenu mnNewMenu_1 = new JMenu("æ¸¸æˆè¯´æ˜");
+		mnNewMenu.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 13));
 		menubar.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem_1= new JMenuItem("¹ØÓÚ");
+		JMenuItem mntmNewMenuItem_1= new JMenuItem("å…³äº");
 		mntmNewMenuItem_1.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				JOptionPane.showMessageDialog(frame, "ÉÏ£ºw£¬ ÏÂ£ºs£¬ ×ó£ºa£¬ ÓÒ£ºd\n made by du_lun");
+				JOptionPane.showMessageDialog(frame, "ä¸Šï¼šwï¼Œ ä¸‹ï¼šsï¼Œ å·¦ï¼šaï¼Œ å³ï¼šd\n made by du_lun");
 			}
 		});
-		mntmNewMenuItem_1.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 13));
+		mntmNewMenuItem_1.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 13));
 		mnNewMenu_1.add(mntmNewMenuItem_1);
 	
 	}
