@@ -4,10 +4,10 @@ import java.awt.GridLayout;
 import java.util.Vector;
 
 public class Tank{
-	private int x=0, y=0;//³õÊ¼Î»ÖÃ
+	private int x=0, y=0;//åˆå§‹ä½ç½®
 	private int speed=3;
-	protected int direct=0;//0¡¢1¡¢2¡¢3¡¢·Ö±ğ´ú±íÉÏÓÒ×óÏÂ
-	private int type=0;//Ì¹¿ËÀàĞÍ¡¢0´ú±í¼º·½
+	protected int direct=0;//0ã€1ã€2ã€3ã€åˆ†åˆ«ä»£è¡¨ä¸Šå³å·¦ä¸‹
+	private int type=0;//å¦å…‹ç±»å‹ã€0ä»£è¡¨å·±æ–¹
 	Bullet myBullet;
 	public boolean isLive=true;
 	protected boolean isStart=true;
