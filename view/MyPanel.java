@@ -20,10 +20,10 @@ public class MyPanel extends JPanel implements Runnable{
 	Map map = new Map();
 	
 	public MyPanel() {
-		//´´½¨¼º·½Ì¹¿Ë
+		//åˆ›å»ºå·±æ–¹å¦å…‹
 		myTank = new MyTank(200,200,0,0);
 		new Thread(myTank).start();
-		//´´½¨µĞÈËÌ¹¿Ë
+		//åˆ›å»ºæ•Œäººå¦å…‹
 		for(int i=0; i<6; i++) {
 			ek=new EnemyTank(i*80, i*i*10,2,1);
 			eks.add(ek);
@@ -39,7 +39,7 @@ public class MyPanel extends JPanel implements Runnable{
 		super.paint(g);
 		
 		g.fillRect(0, 0, 600, 600);
-		//»­Ì¹¿Ë &×Óµ¯
+		//ç”»å¦å…‹ &å­å¼¹
 		if(myTank.isLive)
 			drawTank(myTank.getX(), myTank.getY(), myTank.getType(), myTank.getDirect(), g);
 		for(int i=0; i<myTank.mybs.size(); i++) {
@@ -67,7 +67,7 @@ public class MyPanel extends JPanel implements Runnable{
 					tk.mybs.remove(b);
 			}
 		}
-		//»­±¬Õ¨
+		//ç”»çˆ†ç‚¸
 		for (int i = 0; i < bs.size(); i++) {
             // System.out.println(bs.size());
             Bomb bb = bs.get(i);
@@ -90,7 +90,7 @@ public class MyPanel extends JPanel implements Runnable{
                 bs.remove(bb);
         }
 	}
-	//ÅĞ¶ÏÊÇ·ñ»÷ÖĞ£¬»÷ÖĞÔò²úÉú±¬Õ¨
+	//åˆ¤æ–­æ˜¯å¦å‡»ä¸­ï¼Œå‡»ä¸­åˆ™äº§ç”Ÿçˆ†ç‚¸
 	public boolean isHitEnemy(Bullet b, Tank tk) {
 		 if(b.getX()>=tk.getX() && b.getX()<=tk.getX()+30 &&
 				 b.getY()>=tk.getY() && b.getY()<=tk.getY()+30) {
@@ -149,7 +149,7 @@ public class MyPanel extends JPanel implements Runnable{
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-			//ÅĞ¶ÏÎÒ·½Ì¹¿ËÊÇ·ñ´òµ½µĞ·½
+			//åˆ¤æ–­æˆ‘æ–¹å¦å…‹æ˜¯å¦æ‰“åˆ°æ•Œæ–¹
 			for(int i=0; i<myTank.mybs.size(); i++) {
 				Bullet b=myTank.mybs.get(i);
 				if(b.isLive) {
@@ -161,7 +161,7 @@ public class MyPanel extends JPanel implements Runnable{
 					}
 				}
 			}
-			//ÅĞ¶ÏµĞ·½Ì¹¿ËÊÇ·ñ´òµ½ÎÒ
+			//åˆ¤æ–­æ•Œæ–¹å¦å…‹æ˜¯å¦æ‰“åˆ°æˆ‘
 			for(int i=0; i<eks.size(); i++) {
 				Tank tk=eks.get(i);
 				if(tk.isLive) {
